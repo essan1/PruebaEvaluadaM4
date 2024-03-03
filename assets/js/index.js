@@ -12,7 +12,7 @@ const preview = document.getElementById("preview");
 const botonRegistro = document.getElementById("btnRegistrar");
 const cardAnimales = document.getElementById("Animales");
 
-let selectedImage;
+const selectedImage = {};
 
 //event img preview..
 animalSelect.addEventListener("change", async () => {
