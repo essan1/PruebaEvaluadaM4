@@ -29,10 +29,9 @@ botonRegistro.addEventListener("click", () => {
   const age = edadSelect.value;
   const comments = comentarios.value;
 
-
   if (name && age && comments) {
     let animal;
-    const images = selectedImage;
+    let images = selectedImage;
 
     if (name == "Leon") {
       animal = new Leon(name, age, images, comments);
@@ -50,7 +49,7 @@ botonRegistro.addEventListener("click", () => {
     // limpiar form
     resetForm();
   } else {
-    alert("Por favor rellene todos los campos");
+    alert("🔴Debes rellenar todos los campos para continuar.");
   }
 });
 
