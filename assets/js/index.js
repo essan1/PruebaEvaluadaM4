@@ -19,7 +19,7 @@ animalSelect.addEventListener("change", async () => {
   const animal = animalSelect.value;
   const animales = await infoAnimales.getData();
   const dataAnimal = animales.find((a) => a.name === animal);
-  selectedImage = `assets/imgs/${dataAnimal.imagen}`;
+  selectedImage = `../../assets/imgs/${dataAnimal.imagen}`;
   preview.style.backgroundImage = `url(${selectedImage})`;
 });
 
